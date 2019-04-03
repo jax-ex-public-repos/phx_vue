@@ -1,25 +1,27 @@
-// assets/src/App.vue
 <template>
   <div id="app">
-    <header>
-      <h1>Phoenix Vue</h1>
-    </header>
-    <main>
-      <example></example>
-    </main>
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
+
 <script>
-  import Example from './components/Example'
-  export default {
-    name: 'app',
-    components: {
-      Example
-    }
-  }
+import HelloWorld from './components/HelloWorld.vue';
+
+export default {
+  name: 'app',
+  components: {
+    HelloWorld,
+  },
+};
 </script>
+
 <style>
-  main {
-    margin-top: 60px;
-  }
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
 </style>
