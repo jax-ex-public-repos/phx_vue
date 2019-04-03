@@ -1,6 +1,8 @@
-// assets/src/main.js
-import Vue from 'vue'
-import App from './App'
-Vue.config.productionTip = false
-const element = document.getElementById('app')
-const app = new Vue(App).$mount(element)
+import Vue from 'vue';
+import App from './App.vue';
+
+Vue.config.productionTip = false;
+
+new Vue({
+  render: h => h(App),
+}).$mount('#app');
